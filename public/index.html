@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HydroMetrics O&M — Plataforma de monitoramento preditivo de equipamentos industriais. Acesso restrito.">
+  <title>HydroMetrics O&amp;M — Autenticação</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="login-page">
+
+  
+  <div class="login-brand">
+    <div class="brand-logo">
+      <div class="brand-logo-icon">HM</div>
+      <div class="brand-logo-text">Hydro<span>Metrics</span></div>
+    </div>
+
+    <p class="label-tag" style="margin-bottom: 1rem; color: var(--primary);">Plataforma Industrial O&amp;M</p>
+
+    <h1 class="brand-tagline">
+      Manutenção<br>
+      <em>preditiva</em><br>
+      em tempo real.
+    </h1>
+
+    <p class="brand-desc">
+      Monitore KPIs operacionais, correlacione falhas e tome decisões baseadas
+      em dados com visualizações de alto desempenho. Segurança e rastreabilidade
+      incorporadas desde a arquitetura.
+    </p>
+
+    <div class="brand-stats">
+      <div>
+        <div class="brand-stat-value">99.3%</div>
+        <div class="brand-stat-label">Disponibilidade média</div>
+      </div>
+      <div>
+        <div class="brand-stat-value">&lt;30ms</div>
+        <div class="brand-stat-label">Latência de consulta</div>
+      </div>
+      <div>
+        <div class="brand-stat-value">HS256</div>
+        <div class="brand-stat-label">Autenticação JWT</div>
+      </div>
+    </div>
+
+    <div style="margin-top: 2.25rem;">
+      <a href="landing.html" class="btn btn-ghost" style="font-size: 0.82rem; padding: 0.55rem 1rem;">
+        <span>Visão Geral do Projeto (PoC)</span>
+        <span>→</span>
+      </a>
+    </div>
+
+    
+    <svg style="position:absolute;bottom:2rem;right:2rem;opacity:0.04;" width="200" height="200" viewBox="0 0 200 200" fill="none">
+      <defs>
+        <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+          <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#00d4ff" stroke-width="1"/>
+        </pattern>
+      </defs>
+      <rect width="200" height="200" fill="url(#grid)"/>
+    </svg>
+  </div>
+
+  
+  <div class="login-form-panel">
+    <div class="login-form-box">
+
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
+        <span class="live-indicator">
+          <span class="live-dot"></span>
+          Sistema Operacional
+        </span>
+        <a href="landing.html" style="font-size: 0.8rem; color: var(--primary); text-decoration: none; display: inline-flex; align-items: center; gap: 0.35rem; font-weight: 500;">
+          <span>Sobre o Projeto (PoC)</span>
+          <span>→</span>
+        </a>
+      </div>
+
+      <h2>Acesso Restrito</h2>
+      <p>Faça login com suas credenciais corporativas para acessar o painel.</p>
+
+      
+      <div class="tabs" role="tablist">
+        <button class="tab-btn active" id="tabLogin" role="tab" aria-selected="true" aria-controls="loginForm">
+          Entrar
+        </button>
+        <button class="tab-btn" id="tabRegister" role="tab" aria-selected="false" aria-controls="registerForm">
+          Criar Conta
+        </button>
+      </div>
+
+      
+      <form id="loginForm" role="tabpanel" aria-labelledby="tabLogin" novalidate>
+        <div class="form-group">
+          <label for="email">E-mail Corporativo</label>
+          <input type="email" id="email" name="email" placeholder="seu@email.com" autocomplete="email" required>
+        </div>
+        <div class="form-group">
+          <label for="senha">Senha</label>
+          <input type="password" id="senha" name="senha" placeholder="••••••••" autocomplete="current-password" required>
+        </div>
+
+        <div id="errorMsg" class="error-msg" role="alert">
+          <span>⚠</span>
+          <span id="errorText"></span>
+        </div>
+
+        <button type="submit" id="loginBtn" class="btn btn-primary w-full" style="margin-top: 1.25rem;">
+          <span id="loginBtnText">Acessar Painel</span>
+        </button>
+      </form>
+
+      
+      <form id="registerForm" role="tabpanel" aria-labelledby="tabRegister" style="display: none;" novalidate>
+        <div class="form-group">
+          <label for="regNome">Nome Completo</label>
+          <input type="text" id="regNome" name="nome" placeholder="Ex: João da Silva" autocomplete="name" required>
+        </div>
+        <div class="form-group">
+          <label for="regEmail">E-mail Corporativo</label>
+          <input type="email" id="regEmail" name="email" placeholder="seu@email.com" autocomplete="email" required>
+        </div>
+        <div class="form-group">
+          <label for="regSenha">Senha (mín. 8 caracteres)</label>
+          <input type="password" id="regSenha" name="senha" placeholder="••••••••" autocomplete="new-password" required minlength="8">
+        </div>
+        <div class="form-group">
+          <label for="regConfirmacao">Confirmar Senha</label>
+          <input type="password" id="regConfirmacao" name="confirmacao_senha" placeholder="••••••••" autocomplete="new-password" required minlength="8">
+        </div>
+
+        <div id="regErrorMsg" class="error-msg" role="alert">
+          <span>⚠</span>
+          <span id="regErrorText"></span>
+        </div>
+        <div id="regSuccessMsg" class="success-msg" role="status">
+          <span>✓</span>
+          <span id="regSuccessText"></span>
+        </div>
+
+        <button type="submit" id="registerBtn" class="btn btn-primary w-full" style="margin-top: 1.25rem;">
+          <span id="registerBtnText">Criar Conta</span>
+        </button>
+      </form>
+
+      <p style="font-size: 0.75rem; color: var(--text-subtle); text-align: center; margin-top: 2rem; line-height: 1.6;">
+        Acesso protegido por JWT HttpOnly · Rate limiting ativo · Helmet CSP habilitado<br>
+        <a href="landing.html" style="color: var(--text-muted); text-decoration: underline; margin-top: 0.25rem; display: inline-block;">Conheça a arquitetura e detalhes deste projeto (PoC)</a>
+      </p>
+
+    </div>
+  </div>
+
+</div>
+
+<script src="js/auth.js"></script>
+</body>
+</html>

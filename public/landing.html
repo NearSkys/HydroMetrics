@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HydroMetrics O&M — Prova de Conceito (PoC) e projeto de portfólio para monitoramento preditivo e gestão de operação & manutenção em soluções ambientais.">
+  <title>HydroMetrics O&amp;M — Prova de Conceito &amp; Portfólio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/landing.css">
+</head>
+<body class="landing-body">
+
+  
+  <div class="bg-glow-top"></div>
+  <div class="bg-glow-mid"></div>
+
+  
+  <header class="landing-nav">
+    <div class="landing-container nav-inner">
+      <a href="landing.html" class="nav-brand">
+        <div class="brand-logo-icon">HM</div>
+        <div class="brand-logo-text">Hydro<span>Metrics</span></div>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#sobre">Sobre o Projeto</a></li>
+          <li><a href="#poc">Prova de Conceito</a></li>
+          <li><a href="#arquitetura">Arquitetura</a></li>
+          <li><a href="#tecnologias">Tecnologias</a></li>
+          <li><a href="#seguranca">Segurança</a></li>
+          <li><a href="#demo">Como Testar</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="index.html" class="btn btn-primary" id="btnNavLogin">
+          <span>Acessar Painel</span>
+          <span style="font-size: 0.85rem;">→</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+    <section class="hero-section">
+      <div class="landing-container">
+        
+        <div class="poc-pill">
+          <span class="live-dot"></span>
+          <span>Projeto de Portfólio &amp; Prova de Conceito (PoC)</span>
+        </div>
+
+        <h1 class="hero-title">
+          Monitoramento Preditivo e Inteligência O&amp;M para <span class="gradient-text">Soluções Ambientais</span>.
+        </h1>
+
+        <p class="hero-subtitle">
+          Uma plataforma fullstack concebida para demonstrar engenharia de software resiliente, 
+          modelagem analítica em PostgreSQL, telemetria industrial simulada e uma arquitetura 
+          defensiva rigorosa orientada às boas práticas do OWASP Top 10.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="index.html" class="btn btn-primary" style="padding: 0.9rem 2rem; font-size: 1rem;">
+            <span>Acessar Demonstração (Login)</span>
+            <span>→</span>
+          </a>
+          <a href="#arquitetura" class="btn btn-ghost" style="padding: 0.9rem 1.8rem; font-size: 0.95rem;">
+            <span>Ver Arquitetura Técnica</span>
+          </a>
+        </div>
+
+        
+        <div class="hero-metrics">
+          <div class="metric-item">
+            <div class="metric-number">10.000+</div>
+            <div class="metric-desc">Registros Analisados (AI4I Dataset)</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-number">&lt; 30ms</div>
+            <div class="metric-desc">Tempo de Resposta em Consultas SQL</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-number">6+</div>
+            <div class="metric-desc">Mitigações de Segurança Ativas</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-number">100%</div>
+            <div class="metric-desc">Conteinerizado via Docker Compose</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    
+    <section class="landing-container" id="poc">
+      <div class="poc-disclaimer-card">
+        <div class="poc-disclaimer-icon">!</div>
+        <div class="poc-disclaimer-content">
+          <h3>
+            Natureza do Projeto: Prova de Conceito (PoC)
+            <span class="badge badge-info">Portfólio Técnico</span>
+          </h3>
+          <p>
+            Este projeto foi desenvolvido estritamente como <strong>projeto de portfólio profissional e prova de conceito técnica</strong>. 
+            Seu propósito primordial é evidenciar a aplicação prática de engenharia de software moderna, integrando arquitetura de 
+            banco de dados relacional, APIs RESTful seguras, mitigação de vulnerabilidades comuns e visualização de telemetria industrial.
+          </p>
+          <p>
+            O sistema <strong>não se destina ao uso em produção industrial real</strong>, operando sobre dados derivados do 
+            dataset público de referência internacional <em>AI4I 2020 Predictive Maintenance Dataset</em> (Kaggle). As rotinas de 
+            autenticação, rate limiting e invalidação de sessão foram construídas para ilustrar padrões robustos de mercado em 
+            um ambiente didático e reprodutível.
+          </p>
+          <div class="poc-disclaimer-tags">
+            <span class="badge badge-success">✓ Fullstack JavaScript</span>
+            <span class="badge badge-info">✓ PostgreSQL Relacional</span>
+            <span class="badge badge-warning">✓ OWASP Top 10 Hardening</span>
+            <span class="badge badge-info">✓ Docker Orchestration</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="section-padding" id="sobre">
+      <div class="landing-container">
+        
+        <div class="section-header">
+          <span class="section-tag">Visão Geral &amp; Propósito</span>
+          <h2 class="section-title">O que é o HydroMetrics O&amp;M?</h2>
+          <p class="section-desc">
+            Em plantas de saneamento e tratamento de efluentes, paradas não planejadas em equipamentos 
+            críticos causam prejuízos operacionais severos. O HydroMetrics transforma dados brutos de sensores em 
+            indicadores de ação preventiva.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          
+          <div class="feature-card">
+            <div class="feature-icon-wrap">01</div>
+            <h3>Monitoramento de Ativos</h3>
+            <p>
+              Acompanhamento contínuo de bombas de captação e recalque, motores de aeração e compressores 
+              industriais com categorização por grau de criticidade.
+            </p>
+            <ul class="feature-list">
+              <li>Bombas Centrífugas de Alta Vazão</li>
+              <li>Motores de Tratamento Biológico</li>
+              <li>Compressores de Aeração Contínua</li>
+            </ul>
+          </div>
+
+          
+          <div class="feature-card">
+            <div class="feature-icon-wrap">02</div>
+            <h3>Análise de Tendência e Eficiência</h3>
+            <p>
+              Cálculo automatizado de KPIs operacionais e correlação entre temperatura do ar, 
+              temperatura de processo, torque e velocidade de rotação (RPM).
+            </p>
+            <ul class="feature-list">
+              <li>Agregações SQL com GROUP BY temporal</li>
+              <li>Detecção precoce de desgaste (Tool Wear)</li>
+              <li>Taxa de falhas operacionais em tempo real</li>
+            </ul>
+          </div>
+
+          
+          <div class="feature-card">
+            <div class="feature-icon-wrap">03</div>
+            <h3>Segurança Defensiva Incorporada</h3>
+            <p>
+              Desenvolvido sob o paradigma de <em>Security by Design</em>, com auditoria de vulnerabilidades 
+              mitigadas e comprovadas por suíte de testes automatizados.
+            </p>
+            <ul class="feature-list">
+              <li>JWT via Cookies HttpOnly e SameSite</li>
+              <li>Proteção contra enumeração de usuários</li>
+              <li>Rate limiting e Content Security Policy</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    
+    <section class="section-padding" style="padding-top: 0;">
+      <div class="landing-container">
+        
+        <div class="section-header">
+          <span class="section-tag">Interface de Usuário</span>
+          <h2 class="section-title">Design Industrial de Alto Contraste</h2>
+          <p class="section-desc">
+            Interface moderna construída em Vanilla CSS e Chart.js, inspirada em centros de controle (SCADA) 
+            com modo escuro nativo e hierarquia visual otimizada.
+          </p>
+        </div>
+
+        <div class="preview-wrap">
+          <div class="preview-bar">
+            <div class="preview-dots">
+              <span class="preview-dot red"></span>
+              <span class="preview-dot yellow"></span>
+              <span class="preview-dot green"></span>
+            </div>
+            <div class="preview-url">hydrometrics.local / dashboard.html</div>
+            <div class="live-indicator">
+              <span class="live-dot"></span>
+              <span>12 Sensores Conectados</span>
+            </div>
+          </div>
+
+          
+          <div class="preview-mock-grid">
+            <div class="mock-card">
+              <div class="mock-title">Eficiência Média Operacional</div>
+              <div class="mock-val" style="color: var(--accent);">93.8%</div>
+              <span class="badge badge-success" style="margin-top: 0.5rem;">+2.4% vs meta</span>
+            </div>
+            <div class="mock-card">
+              <div class="mock-title">Equipamentos Monitorados</div>
+              <div class="mock-val">3 Ativos</div>
+              <span class="badge badge-info" style="margin-top: 0.5rem;">100% integrados</span>
+            </div>
+            <div class="mock-card">
+              <div class="mock-title">Alertas de Manutenção (7d)</div>
+              <div class="mock-val" style="color: var(--danger);">14 Ocorrências</div>
+              <span class="badge badge-danger" style="margin-top: 0.5rem;">Falhas prevenidas</span>
+            </div>
+          </div>
+
+          
+          <div style="background: var(--bg-surface); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 1.5rem; text-align: center;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+              <span style="font-size: 0.85rem; font-weight: 600;">Evolução Temporal da Eficiência &amp; Telemetria</span>
+              <span class="mono" style="font-size: 0.75rem; color: var(--primary);">Filtro: Últimos 30 Dias</span>
+            </div>
+            <div style="height: 140px; display: flex; align-items: flex-end; justify-content: space-between; gap: 8px; padding-top: 10px;">
+              <div style="flex:1; height: 60%; background: linear-gradient(180deg, var(--primary-glow), transparent); border-top: 2px solid var(--primary); border-radius: 4px 4px 0 0;"></div>
+              <div style="flex:1; height: 75%; background: linear-gradient(180deg, var(--primary-glow), transparent); border-top: 2px solid var(--primary); border-radius: 4px 4px 0 0;"></div>
+              <div style="flex:1; height: 85%; background: linear-gradient(180deg, var(--primary-glow), transparent); border-top: 2px solid var(--primary); border-radius: 4px 4px 0 0;"></div>
+              <div style="flex:1; height: 70%; background: linear-gradient(180deg, var(--primary-glow), transparent); border-top: 2px solid var(--primary); border-radius: 4px 4px 0 0;"></div>
+              <div style="flex:1; height: 90%; background: linear-gradient(180deg, var(--primary-glow), transparent); border-top: 2px solid var(--accent); border-radius: 4px 4px 0 0;"></div>
+              <div style="flex:1; height: 95%; background: linear-gradient(180deg, var(--primary-glow), transparent); border-top: 2px solid var(--accent); border-radius: 4px 4px 0 0;"></div>
+              <div style="flex:1; height: 88%; background: linear-gradient(180deg, var(--primary-glow), transparent); border-top: 2px solid var(--primary); border-radius: 4px 4px 0 0;"></div>
+              <div style="flex:1; height: 92%; background: linear-gradient(180deg, var(--primary-glow), transparent); border-top: 2px solid var(--accent); border-radius: 4px 4px 0 0;"></div>
+            </div>
+            <p style="font-size: 0.78rem; color: var(--text-muted); margin-top: 1rem;">
+              Renderização dinâmica via <strong>Chart.js</strong> alimentada por endpoints REST e cookies protegidos.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    
+    <section class="section-padding" id="arquitetura" style="background: var(--bg-surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+      <div class="landing-container">
+        
+        <div class="section-header">
+          <span class="section-tag">Engenharia de Dados &amp; Software</span>
+          <h2 class="section-title">Fluxo e Camadas da Aplicação</h2>
+          <p class="section-desc">
+            Arquitetura desacoplada em três camadas principais, orquestrada via contêineres Docker para portabilidade e isolamento.
+          </p>
+        </div>
+
+        <div class="arch-diagram">
+          
+          <div class="arch-node">
+            <span class="arch-node-badge">1. Dados Brutos</span>
+            <span class="arch-node-icon">📁</span>
+            <h4>AI4I 2020 Dataset</h4>
+            <p>ETL via streaming de CSV com conversão tipada e injeção em lotes de telemetria física real.</p>
+          </div>
+
+          
+          <div class="arch-node">
+            <span class="arch-node-badge">2. Persistência</span>
+            <span class="arch-node-icon">🐘</span>
+            <h4>PostgreSQL 15</h4>
+            <p>Tabelas normalizadas, integridade referencial com ON DELETE CASCADE e índices otimizados por data e status.</p>
+          </div>
+
+          
+          <div class="arch-node">
+            <span class="arch-node-badge">3. Backend &amp; Segurança</span>
+            <span class="arch-node-icon">⚡</span>
+            <h4>Node.js Express API</h4>
+            <p>Camada de serviços com Helmet CSP, Rate Limiting, autenticação JWT HttpOnly e queries 100% parametrizadas.</p>
+          </div>
+
+          
+          <div class="arch-node">
+            <span class="arch-node-badge">4. Apresentação</span>
+            <span class="arch-node-icon">📈</span>
+            <h4>Frontend Vanilla &amp; Charts</h4>
+            <p>Aplicação cliente ágil sem dependências pesadas, utilizando Chart.js para telemetria interativa.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    
+    <section class="section-padding" id="tecnologias">
+      <div class="landing-container">
+        
+        <div class="section-header">
+          <span class="section-tag">Stack &amp; Ferramentas</span>
+          <h2 class="section-title">Tecnologias Implementadas</h2>
+          <p class="section-desc">
+            Cada tecnologia foi selecionada para resolver requisitos específicos de segurança, velocidade de consulta e simplicidade operacional.
+          </p>
+        </div>
+
+        <div class="tech-grid">
+          
+          <div class="tech-card">
+            <div class="tech-header">
+              <div class="tech-logo-icon">🟢</div>
+              <div class="tech-info">
+                <h4>Node.js &amp; Express</h4>
+                <span>Backend RESTful</span>
+              </div>
+            </div>
+            <p>Arquitetura modular de rotas e controladores em JavaScript assíncrono. Gerenciamento de ciclo de vida de requisições HTTP e middlewares.</p>
+            <div class="tech-tags">
+              <span class="tech-tag">Express 4.x</span>
+              <span class="tech-tag">Async/Await</span>
+              <span class="tech-tag">REST API</span>
+            </div>
+          </div>
+
+          
+          <div class="tech-card">
+            <div class="tech-header">
+              <div class="tech-logo-icon">🐘</div>
+              <div class="tech-info">
+                <h4>PostgreSQL 15</h4>
+                <span>Banco Relacional Analítico</span>
+              </div>
+            </div>
+            <p>Consultas com driver nativo <code>pg</code>, agregações SQL com GROUP BY e criação de índices compostos para leituras sub-30ms.</p>
+            <div class="tech-tags">
+              <span class="tech-tag">pg-native</span>
+              <span class="tech-tag">Indexes</span>
+              <span class="tech-tag">Parameterized</span>
+            </div>
+          </div>
+
+          
+          <div class="tech-card">
+            <div class="tech-header">
+              <div class="tech-logo-icon">🐳</div>
+              <div class="tech-info">
+                <h4>Docker &amp; Compose</h4>
+                <span>Infraestrutura e Portabilidade</span>
+              </div>
+            </div>
+            <p>Deploy com um único comando. Separação de contêineres para banco de dados e aplicação web com healthchecks e volumes persistentes.</p>
+            <div class="tech-tags">
+              <span class="tech-tag">Docker Compose</span>
+              <span class="tech-tag">Alpine Linux</span>
+              <span class="tech-tag">Healthchecks</span>
+            </div>
+          </div>
+
+          
+          <div class="tech-card">
+            <div class="tech-header">
+              <div class="tech-logo-icon">🔐</div>
+              <div class="tech-info">
+                <h4>JWT &amp; HttpOnly</h4>
+                <span>Autenticação Segura</span>
+              </div>
+            </div>
+            <p>Tokens assinados com algoritmo HS256 transmitidos exclusivamente por cookies protegidos (HttpOnly + SameSite=Strict), invulneráveis a roubo via XSS.</p>
+            <div class="tech-tags">
+              <span class="tech-tag">jsonwebtoken</span>
+              <span class="tech-tag">HttpOnly</span>
+              <span class="tech-tag">Blacklist</span>
+            </div>
+          </div>
+
+          
+          <div class="tech-card">
+            <div class="tech-header">
+              <div class="tech-logo-icon">🛡️</div>
+              <div class="tech-info">
+                <h4>Helmet &amp; Rate Limit</h4>
+                <span>Hardening e Proteção</span>
+              </div>
+            </div>
+            <p>Prevenção ativa contra força bruta com <code>express-rate-limit</code> calibrado e Content Security Policy (CSP) estrito via Helmet.</p>
+            <div class="tech-tags">
+              <span class="tech-tag">CSP</span>
+              <span class="tech-tag">Brute-Force</span>
+              <span class="tech-tag">Bcrypt (cost 12)</span>
+            </div>
+          </div>
+
+          
+          <div class="tech-card">
+            <div class="tech-header">
+              <div class="tech-logo-icon">🧪</div>
+              <div class="tech-info">
+                <h4>Jest &amp; Supertest</h4>
+                <span>Testes Automatizados</span>
+              </div>
+            </div>
+            <p>Bateria de testes de segurança automatizados validando rejeição a injeção SQL, proteção contra enumeração e expiração de sessões.</p>
+            <div class="tech-tags">
+              <span class="tech-tag">Jest</span>
+              <span class="tech-tag">Supertest</span>
+              <span class="tech-tag">Security Tests</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    
+    <section class="section-padding" id="seguranca" style="background: var(--bg-surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+      <div class="landing-container">
+        
+        <div class="section-header">
+          <span class="section-tag">Segurança Defensiva</span>
+          <h2 class="section-title">Mitigações de Vulnerabilidade Validadas</h2>
+          <p class="section-desc">
+            Como diferencial técnico para o portfólio, este projeto passou por auditoria de segurança prática 
+            com validação das seguintes defesas:
+          </p>
+        </div>
+
+        <div class="security-table-card">
+          <div class="alerts-table-wrap">
+            <table class="sec-table">
+              <thead>
+                <tr>
+                  <th>Vulnerabilidade / Vetor</th>
+                  <th>Classificação OWASP</th>
+                  <th>Implementação Técnica</th>
+                  <th>Status de Validação</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Revogação de Sessão JWT</strong></td>
+                  <td>A01:2021 — Broken Access Control</td>
+                  <td>Mecanismo de blacklist em memória com expiração automática que invalida tokens após o logout.</td>
+                  <td><span class="badge badge-success">✓ Mitigado &amp; Testado</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Bypass de Rate Limit por IP</strong></td>
+                  <td>A04:2021 — Insecure Design</td>
+                  <td>Configuração de <code>trust proxy 1</code> para obtenção verídica do IP cliente atrás de proxies reversos.</td>
+                  <td><span class="badge badge-success">✓ Mitigado</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Enumeração de Usuários</strong></td>
+                  <td>A07:2021 — Identification &amp; Auth</td>
+                  <td>Status uniforme <code>202 Accepted</code> tanto para e-mails novos quanto já existentes, eliminando temporização assimétrica.</td>
+                  <td><span class="badge badge-success">✓ Mitigado &amp; Testado</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Injeção de SQL (SQLi)</strong></td>
+                  <td>A03:2021 — Injection</td>
+                  <td>Todas as consultas com queries preparadas e parâmetros numerados (<code>$1, $2</code>) no driver <code>pg</code>.</td>
+                  <td><span class="badge badge-success">✓ Mitigado &amp; Testado</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Cross-Site Scripting (XSS)</strong></td>
+                  <td>A03:2021 — Injection</td>
+                  <td>Cookies de autenticação restritos via flags <code>HttpOnly</code>, <code>SameSite=Strict</code> e cabeçalhos CSP via Helmet.</td>
+                  <td><span class="badge badge-success">✓ Mitigado</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Princípio do Menor Privilégio</strong></td>
+                  <td>A05:2021 — Security Misconfiguration</td>
+                  <td>Criação do usuário de banco <code>ast_app_user</code> com permissões estritas apenas de DML, sem privilégios de superusuário.</td>
+                  <td><span class="badge badge-success">✓ Implementado</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    
+    <section class="section-padding" id="demo">
+      <div class="landing-container">
+        
+        <div class="cta-banner">
+          <span class="badge badge-info" style="margin-bottom: 1.25rem;">Ambiente Pronto para Avaliação</span>
+          <h2>Pronto para Explorar a Aplicação?</h2>
+          <p>
+            Você pode testar a experiência completa diretamente na interface web. Crie uma conta em segundos 
+            ou explore o código fonte e as especificações técnicas da solução.
+          </p>
+
+          <div style="background: rgba(6, 13, 26, 0.6); border: 1px solid var(--border); border-radius: var(--radius-md); max-width: 480px; margin: 0 auto 2rem; padding: 1rem 1.5rem; text-align: left;">
+            <div style="font-size: 0.78rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.4rem;">Instruções para Teste:</div>
+            <ol style="color: var(--text-main); font-size: 0.88rem; padding-left: 1.2rem; line-height: 1.8;">
+              <li>Acesse a tela de autenticação pelo botão abaixo.</li>
+              <li>Utilize a aba <strong>"Criar Conta"</strong> para registrar um usuário com qualquer e-mail corporativo.</li>
+              <li>Acesse o painel para navegar pelos gráficos e filtros de telemetria.</li>
+            </ol>
+          </div>
+
+          <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+            <a href="index.html" class="btn btn-primary" style="padding: 0.9rem 2.2rem; font-size: 1rem;">
+              <span>Ir para a Tela de Login</span>
+              <span>→</span>
+            </a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-ghost" style="padding: 0.9rem 1.8rem; font-size: 0.95rem;">
+              <span>Repositório GitHub</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  
+  <footer class="landing-footer">
+    <div class="landing-container">
+      <div class="footer-top">
+        <div class="nav-brand">
+          <div class="brand-logo-icon" style="width: 32px; height: 32px; font-size: 1rem;">⚡</div>
+          <div class="brand-logo-text" style="font-size: 1.1rem;">Hydro<span>Metrics</span></div>
+        </div>
+
+        <div style="color: var(--text-muted); font-size: 0.85rem;">
+          Dashboard de O&amp;M para Soluções Ambientais · Prova de Conceito
+        </div>
+      </div>
+
+      <div class="footer-copy">
+        <div>
+          © 2026 HydroMetrics O&amp;M — Desenvolvido como projeto de portfólio e demonstração técnica.
+        </div>
+        <div style="display: flex; gap: 1.5rem;">
+          <a href="index.html" style="color: var(--primary); text-decoration: none; font-size: 0.82rem;">Acessar Sistema</a>
+          <a href="#poc" style="color: var(--text-muted); text-decoration: none; font-size: 0.82rem;">Aviso de PoC</a>
+          <a href="#tecnologias" style="color: var(--text-muted); text-decoration: none; font-size: 0.82rem;">Stack Técnica</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
